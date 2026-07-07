@@ -1,3 +1,19 @@
+terraform {
+  required_version = "~> 1.15"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.53"
+    }
+
+    vault = {
+      source  = "hashicorp/vault"
+      version = "~> 5.3"
+    }
+  }
+}
+
 provider "vault" {
   address = "http://44.193.145.136:8200"
 }
