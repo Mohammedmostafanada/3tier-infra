@@ -18,3 +18,17 @@ Thumbs.db
 
 # Logs
 *.log
+# Ignore local Terraform directories and plugins
+.terraform/
+.terraform.lock.hcl
+
+# Ignore any local state files left over from bootstrap
+*.tfstate
+*.tfstate.backup
+
+# Ignore any sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Ignore Vault tokens or environment files if you created any
+.env
