@@ -15,7 +15,7 @@ terraform {
 }
 
 provider "vault" {
-  address = "http://44.193.145.136:8200"
+  address = "http://127.0.0.1:8200"
 }
 
 # Fetch the secrets ephemerally (in-memory only)
