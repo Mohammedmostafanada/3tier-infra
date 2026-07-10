@@ -32,3 +32,18 @@ variable "private_db_availability_zone" {
   description = "Availability Zone for the private database subnet"
   type        = string
 }
+
+
+
+
+
+variable "key_name" {
+  description = "AWS EC2 key pair name"
+  type        = string
+}
+
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t3.micro"
+}
