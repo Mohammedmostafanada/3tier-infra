@@ -22,18 +22,20 @@ module "security" {
 
 
 
-module "compute"{
+module "compute" {
 
   source = "./modules/compute"
 
-  public_subnet_id = module.network.public_subnet_id
+  public_subnet_id      = module.network.public_subnet_id
   private_app_subnet_id = module.network.private_app_subnet_id
-  private_db_subnet_id = module.network.private_db_subnet_id
+  private_db_subnet_id  = module.network.private_db_subnet_id
 
 
   frontend_sg_id = module.security.frontend_sg_id
-  backend_sg_id = module.security.backend_sg_id
-  db_sg_id = module.security.db_sg_id
-  
+  backend_sg_id  = module.security.backend_sg_id
+  db_sg_id       = module.security.db_sg_id
+
+  ami_id   = var.ami_id
+  key_name = var.key_name
 
 }
