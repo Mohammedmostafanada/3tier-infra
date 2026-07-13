@@ -34,7 +34,10 @@ variable "private_db_availability_zone" {
 }
 
 
-
+variable "ami_id" {
+  description = "AMI ID for EC2 instances"
+  type        = string
+}
 
 
 variable "key_name" {
@@ -46,4 +49,9 @@ variable "instance_type" {
   description = "EC2 instance type"
   type        = string
   default     = "t3.micro"
+}
+
+variable "project_name" {
+  description = "Project name used for naming AWS resources"
+  type        = string
 }
