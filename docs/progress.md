@@ -156,4 +156,21 @@ subnet_id = aws_subnet.public.id
 
 
 
+## Completed
 
+- Created Security module
+- Added Frontend Security Group
+- Added Backend Security Group
+- Added Database Security Group
+- Connected Security module with Network module
+
+
+
+## Security Module
+
+- Created security module
+- Added frontend security group
+- Added backend security group
+- Added database security group
+- Connected security module with network module
+- Exported security group IDs for compute module
