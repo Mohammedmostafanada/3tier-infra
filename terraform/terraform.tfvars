@@ -1,6 +1,6 @@
 project_name = "3tier"
-ami_id = "ami-091138d0f0d41ff90"
-vpc_cidr = "10.0.0.0/16"
+ami_id       = "ami-091138d0f0d41ff90"
+vpc_cidr     = "10.0.0.0/16"
 
 
 
