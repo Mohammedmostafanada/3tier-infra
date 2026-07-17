@@ -11,12 +11,18 @@ terraform {
       source  = "hashicorp/vault"
       version = "~> 5.3"
     }
+    local = {
+      source  = "hashicorp/local"
+      version = "~> 2.5"
+    }
   }
 }
 
 provider "vault" {
   address = "http://127.0.0.1:8200"
 }
+
+
 
 # Fetch the secrets ephemerally (in-memory only)
 ephemeral "vault_kv_secret_v2" "aws_creds" {
