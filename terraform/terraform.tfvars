@@ -15,5 +15,5 @@ private_db_availability_zone  = "us-east-1c"
 
 
 
-key_name      = "your-key-name"
+key_name      = "mohamed-key"
 instance_type = "t3.micro"
